@@ -1,0 +1,20 @@
+==> Representational State Transfer
+
+REST API is a URL based API diffrent form  tradational web where we sent HTML pages as a response.
+In RESTFUL apis w sent data through the diffrent URL, we create our diffrent URL like 
+    ->hppps://localhost/products
+    ->hppps://localhost/persons
+    ->hppps://localhost/animals
+
+In such URLs we put out data. and we route though the URLs to get data on any decive like mobile,
+web desktop applications.
+
+==> WHY A RESTFUL API the tradational applications
+
+1->In mobile applications development and other we don't need HTML pages to we need Data though which we can 
+    use in our applications.
+2->Where we are more intrested in data then UI or HTML pages. like google Map where we just  send the qurdinates
+    to server and we get geo locations and other attributes.
+3->Single page applications (SPA), where we just have a single page and we rander attiibutes over it again and
+    again. We just need HTML for first rander then we only communicate with data.
+
