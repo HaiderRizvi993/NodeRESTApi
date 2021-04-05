@@ -1,4 +1,5 @@
 ==> Representational State Transfer
+Stateless servers.
 
 REST API is a URL based API diffrent form  tradational web where we sent HTML pages as a response.
 In RESTFUL apis w sent data through the diffrent URL, we create our diffrent URL like 
