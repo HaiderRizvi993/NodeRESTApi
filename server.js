@@ -1,3 +1,4 @@
+console.clear();
 const http = require('http');
 const app = require('./app')
 

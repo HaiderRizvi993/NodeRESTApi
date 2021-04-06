@@ -1,13 +1,10 @@
 const express = require('express');
 const app = express();
 
-app.use((req, res, next) => {
-    res
-        .status(200)
-        .send("Server started successfully")
+const productRouter = require('./routes/products');
+const ordersRouter = require('./routes/orders');
 
-})
-
-
+app.use('/products', productRouter);
+app.use('/orders', ordersRouter);
 
 module.exports = app;
