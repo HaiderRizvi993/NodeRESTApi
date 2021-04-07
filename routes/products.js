@@ -1,5 +1,8 @@
 const express = require('express');
 const router = express.Router();
+const mongoose = require('mongoose');
+
+const Product = require('../models/Products')
 
 router.get('/', (req, res, next) =>{
     res.status(200).json({
@@ -8,7 +11,13 @@ router.get('/', (req, res, next) =>{
 });
 
 router.post('/', (req, res, next) =>{
-    res
+    const product = new Product({
+        _id: new mongoose.Types.ObjectId(),
+        name: req.body.name,
+        price: req.body.price
+    })
+    console.log(product.name);
+    Product.save().then(result => console.log(result))
         .status(200)
         .json({
         message: 'POST request'
